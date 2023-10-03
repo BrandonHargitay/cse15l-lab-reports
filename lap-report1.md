@@ -2,7 +2,7 @@
 Basic filesystem commands we learned in class 10/03/23
 ## Commands
  * cd
-	 1. ```console
+```console
 foo@bar:~$ whoami
 foo
 ```
