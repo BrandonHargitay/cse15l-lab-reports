@@ -1,1 +1,4 @@
-HELOOOOOOOO MY NAME IS BRANDON
+```console
+foo@bar:~$ whoami
+foo
+```
