@@ -3,8 +3,10 @@ Basic filesystem commands we learned in class 10/03/23
 ## Commands
  * cd
 ```console
-foo@bar:~$ whoami
-foo
+foo@bar:~$ cat
+
+
+
 ```
  * ls
 	 * 
