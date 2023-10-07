@@ -15,13 +15,16 @@ Basic filesystem commands we learned in class 10/03/23
 		[user@sahara ~/lecture1]$ pwd
 		/home/lecture1
 		```
-	 	when running the `cd` command with no arguments we do not change directories. Since no argument was given the terminal did not know what directory to change to. The directory stayed the same. The command does not throw a error however the `cd` command should have a arguemnt in order for it to work.
-	2. Share an exmaple of using the command with a path to a directory as an argument.
+	 	when running the `cd` command with no arguments we do not change directories. Since no argument was given the terminal did not know what directory to change to. The directory stayed the same. The command does not throw an error however the `cd` command should have a argument in order for it to work.
+	2. Share an example of using the command with a path to a directory as an argument.
 
 		```console
-		[user@sahara ~/lecture1]$ cd
-		
-		
+		[user@sahara ~/lecture1]$ pwd
+		/home/lecture1
+		[user@sahara ~/lecture1]$ cd messages/
+		[user@sahara ~/lecture1/messages]$
+		[user@sahara ~/lecture1/messages]$ pwd
+		/home/lecture1/messages
 		```
   
 		Working Directory:
