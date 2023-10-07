@@ -31,7 +31,7 @@ Basic filesystem commands we learned in class 10/03/23
 		[user@sahara ~/lecture1]$ pwd
 		/home/lecture1
 		```
-	 	when running the `cd` command with no arguments we do not change directories. Since no argument was given the terminal did not know what directory to change to. The directory stayed the same. The command does not throw a error however the `cd` command should have a arguemnt in order for it to work. 
+	 	when running the `cd` command with when running the `cd` command with a path to a directory as an argument changes the working directory. As you can see from the above code we change directories from `/home/lecture1` to `/home/lecture1/messages` using the `cd` command.
 
 
 
