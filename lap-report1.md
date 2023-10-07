@@ -48,8 +48,21 @@ Basic filesystem commands we learned in class 10/03/23
 		```
 	 	when running the `cd` command with a path to a file as an argument it outputs an error `bash: cd: en-us.txt: Not a directory` this says that the argument is not a directory which is true its a file. 
 
-
  * ls
+	1. Share an example of using the command with no arguments.
+
+		```console
+		[user@sahara ~/lecture1]$ ls
+		
+		
+		```
+  
+		Working Directory:
+		```console
+		[user@sahara ~/lecture1]$ pwd
+		/home/lecture1
+		```
+	 	when running the `cd` command with no arguments we do not change directories. Since no argument was given the terminal did not know what directory to change to. The directory stayed the same. The command does not throw an error however the `cd` command should have a argument in order for it to work.
 	
  * cat
 	1. Share an example of using the command with no arguments.
