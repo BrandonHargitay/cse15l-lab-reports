@@ -31,8 +31,22 @@ Basic filesystem commands we learned in class 10/03/23
 		[user@sahara ~/lecture1]$ pwd
 		/home/lecture1
 		```
-	 	when running the `cd` command with when running the `cd` command with a path to a directory as an argument changes the working directory. As you can see from the above code we change directories from `/home/lecture1` to `/home/lecture1/messages` using the `cd` command.
+	 	when running the `cd` command with a path to a directory as an argument changes the working directory. As you can see from the above code we change directories from `/home/lecture1` to `/home/lecture1/messages` using the `cd` command.
+	3. Share an example of using the command with a path to a file as an argument.
 
+		```console
+		[user@sahara ~/lecture1/messages]$ cd en-us.txt 
+		bash: cd: en-us.txt: Not a directory
+		[user@sahara ~/lecture1/messages]$ pwd
+		/home/lecture1/messages
+		```
+  
+		Working Directory:
+		```console
+		[user@sahara ~/lecture1/messages]$ pwd
+		/home/lecture1/messages
+		```
+	 	when running the `cd` command with a path to a file as an argument it outputs an error `bash: cd: en-us.txt: Not a directory` this says that the argument is not a directory which is true its a file. 
 
 
  * ls
