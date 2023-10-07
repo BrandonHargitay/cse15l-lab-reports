@@ -2,6 +2,8 @@
 Basic filesystem commands we learned in class 10/03/23
 ## Commands
 * cd
+	1. Share an example of using the command with no arguments.
+
 ```console
 [user@sahara ~/lecture1]$ cat
 
