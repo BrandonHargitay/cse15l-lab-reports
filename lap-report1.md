@@ -15,7 +15,7 @@ Basic filesystem commands we learned in class 10/03/23
 		[user@sahara ~/lecture1]$ pwd
 		/home/lecture1
 		```
-	 	when running the 'cat' command with no arguments the command hangs and does not output anything. I had to use 'ctrl + c' to exit the command. The output is an error, the 'cat' command needs an argument since no argument was given, and there was nothing to cat out.
+	 	when running the `cd` command with no arguments we do not change directories. Since no argument was given the terminal did not know what directory to change to. The directory stayed the same. The command does not throw a error however the `cd` command should have a arguemnt in order for it to work. 
 
 
 
@@ -25,7 +25,7 @@ Basic filesystem commands we learned in class 10/03/23
 	1. Share an example of using the command with no arguments.
 
 		```console
-		[user@sahara ~/lecture1]$ cd
+		[user@sahara ~/lecture1]$ cat
 		
 		
 		```
