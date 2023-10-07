@@ -53,6 +53,7 @@ Basic filesystem commands we learned in class 10/03/23
 
 		```console
 		[user@sahara ~/lecture1]$ ls
+		Hello.class  Hello.java  messages  README
 		
 		
 		```
@@ -62,7 +63,7 @@ Basic filesystem commands we learned in class 10/03/23
 		[user@sahara ~/lecture1]$ pwd
 		/home/lecture1
 		```
-	 	when running the `cd` command with no arguments we do not change directories. Since no argument was given the terminal did not know what directory to change to. The directory stayed the same. The command does not throw an error however the `cd` command should have a argument in order for it to work.
+	 	when running the `ls` command with no arguments it outputs a list of the files and directories in the working directory. The output is not a error.
 	
  * cat
 	1. Share an example of using the command with no arguments.
