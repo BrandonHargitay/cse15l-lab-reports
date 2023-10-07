@@ -22,7 +22,6 @@ Basic filesystem commands we learned in class 10/03/23
 		[user@sahara ~/lecture1]$ pwd
 		/home/lecture1
 		[user@sahara ~/lecture1]$ cd messages/
-		[user@sahara ~/lecture1/messages]$
 		[user@sahara ~/lecture1/messages]$ pwd
 		/home/lecture1/messages
 		```
