@@ -8,7 +8,11 @@ Basic filesystem commands we learned in class 10/03/23
 [user@sahara ~/lecture1]$ cat
 
 
-
+```
+Working Directory:
+```console
+[user@sahara ~/lecture1]$ pwd
+/home/lecture1
 ```
  * ls
 	
