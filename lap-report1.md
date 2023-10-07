@@ -63,7 +63,20 @@ Basic filesystem commands we learned in class 10/03/23
 		[user@sahara ~/lecture1]$ pwd
 		/home/lecture1
 		```
-	 	when running the `ls` command with no arguments it outputs a list of the files and directories in the working directory. The output is not a error.
+	 	when running the `ls` command with no arguments it outputs a list of the files and directories in the working directory. The output is not an error.
+	2. Share an example of using the command with a path to a directory as an argument.
+
+		```console
+		[user@sahara ~/lecture1]$ ls messages/
+		en-us.txt  es-mx.txt  hu.txt  zh-cn.txt
+		```
+  
+		Working Directory:
+		```console
+		[user@sahara ~/lecture1]$ pwd
+		/home/lecture1
+		```
+	 	when running the `cd` command with a path to a directory as an argument it outputs the files and directories inside the directory that was passed as an argument. The output is not an error.
 	
  * cat
 	1. Share an example of using the command with no arguments.
