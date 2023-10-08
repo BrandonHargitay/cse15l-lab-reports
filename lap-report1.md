@@ -46,7 +46,7 @@ Basic filesystem commands we learned in class 10/03/23
 		[user@sahara ~/lecture1/messages]$ pwd
 		/home/lecture1/messages
 		```
-	 	when running the `cd` command with a path to a file as an argument it outputs an error `bash: cd: en-us.txt: Not a directory` this says that the argument is not a, you can only use `cd` with a path to a directory as an argument.
+	 	when running the `cd` command with a path to a file as an argument it outputs an error `bash: cd: en-us.txt: Not a directory` this says that the argument is not a directoy, you can only use `cd` with a path to a directory as an argument.
 
  * <h3>ls</h3>
 	1. Share an example of using the command with no arguments.
