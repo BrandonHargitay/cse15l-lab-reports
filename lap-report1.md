@@ -1,7 +1,7 @@
 # Lab Report 1 - Remote Access and FileSystem (Week 1)
 Basic filesystem commands we learned in class 10/03/23
 ## Commands
-* cd
+* <h3>cd</h3>
 	1. Share an example of using the command with no arguments.
 
 		```console
