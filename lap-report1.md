@@ -86,8 +86,8 @@ Basic filesystem commands we learned in class 10/03/23
   
 		Working Directory:
 		```console
-		[user@sahara ~/lecture1/messages]$ pwd
-		/home/lecture1/messages
+		[user@sahara ~/lecture1]$ pwd
+		/home/lecture1
 		```
 	 	when running the `ls` command with a path to a file as an argument it outputs the argument that was passed. This output was not an error.
  * cat
