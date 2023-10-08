@@ -118,6 +118,27 @@ Basic filesystem commands we learned in class 10/03/23
 		/home/lecture1
 		```
 	 	when running the `cat` command with a path to a directory as an argument it outputs an error `cat: messages/: Is a directory` since the argument is a directory there is nothing to cat out.
-	
+	3. Share an example of using the command with a path to a file as an argument.
 
+		```console
+		[user@sahara ~/lecture1]$ cat Hello.java 
+		import java.io.IOException;
+		import java.nio.charset.StandardCharsets;
+		import java.nio.file.Files;
+		import java.nio.file.Path;
+		
+		public class Hello {
+		  public static void main(String[] args) throws IOException {
+		    String content = Files.readString(Path.of(args[0]), StandardCha
+		rsets.UTF_8);    
+		    System.out.println(content);
+		  }
+		```
+  
+		Working Directory:
+		```console
+		[user@sahara ~/lecture1]$ pwd
+		/home/lecture1
+		```
+	 	when running the `cat` command with a path to a file as an argument it outputs the contents of the argument. In this case, it outputed the contents of the `Hello.java` file. This is not a error.
 
