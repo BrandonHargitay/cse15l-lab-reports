@@ -99,7 +99,11 @@ Basic filesystem commands we learned in class 10/03/23
 	1. Share an example of using the command with no arguments.
 
 		```console
-		[user@sahara ~/lecture1]$ cat
+		[user@sahara ~]$ cat
+		test
+		test
+		what
+		what
 		
 		
 		```
@@ -109,7 +113,7 @@ Basic filesystem commands we learned in class 10/03/23
 		[user@sahara ~/lecture1]$ pwd
 		/home/lecture1
 		```
-	 	when running the `cat` command with no arguments the command hangs and does not output anything. I had to use `ctrl + c` to exit the command. The output is an error, the `cat` command needs an argument since no argument was given, and there was nothing to cat out.
+	 	when running the `cat` command with no arguments the command seems like it hangs and does not output anything *BUT* if you enter a word and hit enter the word will cat out. eg. If I type test and click enter test will output. This is not an error, however, I do not see how this can be useful.
 	2. Share an example of using the command with a path to a directory as an argument.
 
 		```console
