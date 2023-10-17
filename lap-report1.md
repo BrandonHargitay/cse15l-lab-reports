@@ -20,7 +20,7 @@ Basic filesystem commands we learned in class 10/03/23
 		[user@sahara ~/lecture1]$ pwd
 		/home/lecture1
 		```
-	 	when running the `cd` command with no arguments the directory changes to the home directory. We can see this by using `pwd before and after running the `cd` command
+	 	when running the `cd` command with no arguments the directory changes to the home directory. We can see this by using `pwd` before and after running the `cd` command
 	2. Share an example of using the command with a path to a directory as an argument.
 
 		```console
