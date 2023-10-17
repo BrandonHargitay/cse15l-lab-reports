@@ -5,7 +5,12 @@ Basic filesystem commands we learned in class 10/03/23
 	1. Share an example of using the command with no arguments.
 
 		```console
+		[user@sahara ~]$ cd lecture1/
+		[user@sahara ~/lecture1]$ pwd
+		/home/lecture1
 		[user@sahara ~/lecture1]$ cd
+		[user@sahara ~]$ pwd
+		/home
 		
 		
 		```
