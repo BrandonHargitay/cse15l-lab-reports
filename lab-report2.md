@@ -3,6 +3,24 @@ Write a basic web server.
 ## Part 1
 ![Screenshot1](./images/Screenshot 2023-10-21 at 1.13.01 PM.png)
 ![Screenshot1](./images/Screenshot 2023-10-21 at 1.13.17 PM.png)
+1. **http://localhost:4000/add-message?s=World!**
+   
+   - **Which methods in your code are called?**
+     
+     `handleRequest(URI url)`
+   
+   - **What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
+     
+     The `URI url` argument for `handleRequest` will have the value `http://localhost:4000/add-message?s=World!`.
+     At the start of this method call, the `words` field is an empty string (if no prior request modified it) and the `number` field is `1` (again, if no prior request modified it).
+     
+   - **How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
+     
+     After processing this request, the `words` field will change to:
+     ```
+     1. World!
+     ```
+     and the `number` field will be incremented to `2`.
 ![Screenshot1](./images/Screenshot 2023-10-21 at 1.13.31 PM.png)
 
 
