@@ -4,3 +4,4 @@ Hello! I am a Computer Science undergrad at UC San Diego. This is my website for
 ## Lab Reports
 
 ### - [Lab Report 1](lap-report1.html)
+### - [Lab Report 2](lap-report2.html)
