@@ -18,12 +18,12 @@ class Handler implements URLHandler {
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-		return words.isEmpty() ? "No words in list! Please add a word" : words;       
+			return words.isEmpty() ? "No words in list! Please add a word" : words;       
         } else if (url.getPath().equals("/add-message")) {
-		String[] parameters = url.getQuery().split("=");
-            if (parameters[0].equals("s")) {
-		words  += number + ". " + parameters[1] + "\n";
-		number++; 
+			String[] parameters = url.getQuery().split("=");
+			if (parameters[0].equals("s")) {
+				words  += number + ". " + parameters[1] + "\n";
+				number++; 
                 return words;
             }
         } 
