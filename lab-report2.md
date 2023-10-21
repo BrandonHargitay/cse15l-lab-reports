@@ -89,3 +89,5 @@ class SearchEngine {
 ![Screenshot1](./images/ssh1.png)
 ![Screenshot1](./images/ssh3.png)
 ![Screenshot1](./images/ssh2.png)
+## Part 3
+I learned a lot this week! One of the most interesting skills I learned is the `scp` command. I can see how this command can be very useful when wanting to get or pull and file into your local or remote machine. I never really thought about how someone could move files between servers. Honestly, I thought that was something that you just couldn't do.  
