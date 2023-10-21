@@ -87,5 +87,5 @@ class SearchEngine {
 ```
 ## Part 2
 ![Screenshot1](./images/ssh1.png)
-![Screenshot1](./images/ssh2.png)
 ![Screenshot1](./images/ssh3.png)
+![Screenshot1](./images/ssh2.png)
