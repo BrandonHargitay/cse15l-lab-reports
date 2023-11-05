@@ -3,6 +3,6 @@ Hello! I am a Computer Science undergrad at UC San Diego. This is my website for
 
 ## Lab Reports
 
-### - [Lab Report 1](lap-report1.html)
-### - [Lab Report 2](lap-report2.html)
-### - [Lab Report 3](lap-report3.html)
+### - [Lab Report 1](lab-report1.html)
+### - [Lab Report 2](lab-report2.html)
+### - [Lab Report 3](lab-report3.html)
