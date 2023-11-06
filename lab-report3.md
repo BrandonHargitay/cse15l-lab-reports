@@ -41,13 +41,13 @@ An input that doesn’t induce a failure, as a JUnit test and any associated cod
 ```java
 @Test
     public void testSingleDirectory() throws IOException {
-        File startDir = new File("some-files/a.txt");
+        File start = new File("some-files/a.txt");
         
-        List<File> files = FileExample.getFiles(startDir);
+        List<File> files = FileExample.getFiles(start);
         
        
-        final int expectedCount = 1; 
-        assertEquals("The number of files found does not match the expected count.", expectedCount, files.size());
+        final int count = 1; 
+        assertEquals("ERROR! expected count does not match actual count", count, files.size());
         
         assertTrue(files.contains(new File("some-files/a.txt")));
     }
