@@ -90,3 +90,5 @@ static List<File> getFiles(File start) throws IOException {
         return result;
 	}
 ```
+This change fixes the bug by recursively traversing all directories and collecting files from each directory, not just the top-level directory.
+## Part 2
