@@ -1,7 +1,7 @@
 # Lab Report 3 - Lab Report 3 - Bugs and Commands
 Finding bugs and researching commands 
 ## Part 1
-The issue with the `getFile` method in `fileExample.java`  is that it incorrectly processes individual files. It attempts to list contents within a file, which is an operation only applicable to directories, not to files.
+The code does not recursively list files in subdirectories, only including the contents of the specified directory.
 - - -
 A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
 ```bash
@@ -18,7 +18,7 @@ some-files/
 ```java
 public class FileTest {
     @Test
-    public void testGetFilesRecursive(){
+    public void testRecursion(){
         File start = new File("some-files/");
         
         List<File> files = FileExample.getFiles(start);
@@ -38,3 +38,17 @@ public class FileTest {
 ```
 ---
 An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+```java
+@Test
+    public void testSingleDirectory() throws IOException {
+        File startDir = new File("some-files/a.txt");
+        
+        List<File> files = FileExample.getFiles(startDir);
+        
+       
+        final int expectedCount = 1; 
+        assertEquals("The number of files found does not match the expected count.", expectedCount, files.size());
+        
+        assertTrue(files.contains(new File("some-files/a.txt")));
+    }
+```
