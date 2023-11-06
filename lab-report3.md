@@ -1,7 +1,7 @@
 # Lab Report 3 - Lab Report 3 - Bugs and Commands
 Finding bugs and researching commands 
 ## Part 1
-The code does not recursively list files in subdirectories, only including the contents of the specified directory.
+In `FileExample.java`, the code does not recursively list files in subdirectories, only including the contents of the specified directory.
 - - -
 A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
 ```bash
@@ -172,3 +172,6 @@ less -M ./technical/911report/chapter-1.txt
 ./technical/911report/chapter-1.txt lines 6-16/731 1%
 ```
 When you search with the `-M` option, a more detailed prompt appears, displaying the file name and the current position within the file.
+- - -
+The command options were found by googling `less command options` I found a site that gave a description of the and picked the options that looked the most interesting
+[Less Command in Linux - phoenixNAP](https://phoenixnap.com/kb/less-command-in-linux)
