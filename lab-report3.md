@@ -105,3 +105,23 @@ less -preport ./technical/911report/chapter-1.txt
 ```
 Opens the first item that fits the given pattern in a text file on the page.
 - - -
+```bash
+less -N ./technical/911report/chapter-1.txt
+
+1 
+2         
+3                 
+4 "WE HAVE SOME PLANES"
+5 
+```
+```bash
+less -N ./technical/911report/chapter-2.txt
+
+1 
+2     
+3         
+4             THE FOUNDATION OF THE NEW TERRORISM
+5             A DECLARATION OF WAR
+```
+Line numbers are shown in front of each line when the `-N` option is used. When you need to consult the line numbers for editing or discussion, this is quite helpful.
+- - -
