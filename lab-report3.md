@@ -174,4 +174,4 @@ less -M ./technical/911report/chapter-1.txt
 When you search with the `-M` option, a more detailed prompt appears, displaying the file name and the current position within the file.
 - - -
 The command options were found by googling `less command options` I found a site that gave a description of the and picked the options that looked the most interesting
-[Less Command in Linux - phoenixNAP](https://phoenixnap.com/kb/less-command-in-linux)
+[https://phoenixnap.com/kb/less-command-in-linux](https://phoenixnap.com/kb/less-command-in-linux)
