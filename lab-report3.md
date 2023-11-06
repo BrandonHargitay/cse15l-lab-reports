@@ -92,3 +92,16 @@ static List<File> getFiles(File start) throws IOException {
 ```
 This change fixes the bug by recursively traversing all directories and collecting files from each directory, not just the top-level directory.
 ## Part 2
+### Less Command
+```bash
+less -pbecause ./technical/911report/chapter-1.txt
+
+ Hani Hanjour, Khalid al Mihdhar, and Majed Moqed were flagged by CAPPS. The Hazmi brothers were also selected for extra scrutiny by the airline's customer service representative at the check-in counter. He did so because one of the brothers did not have photo identification nor could he understand English, and because the agent found both of the passengers to be suspicious. The only consequence of their selection was that their checked bags were held off the plane until it was confirmed that they had boarded the aircraft.
+```
+```bash
+less -preport ./technical/911report/chapter-1.txt
+
+ None of the checkpoint supervisors recalled the hijackers or reported anything suspicious regarding their screening.
+```
+Opens the first item that fits the given pattern in a text file on the page.
+- - -
