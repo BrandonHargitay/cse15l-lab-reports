@@ -75,20 +75,20 @@ static List<File> getFiles(File start) throws IOException {
 ### After
 
 ```java
-	static List<File> getFiles(File start) throws IOException {
-	  List<File> result = new ArrayList<>();
-        if (start.isDirectory()) {
-            File[] files = start.listFiles();
-            if (files != null) {
-                for (File file : files) {
-                    result.addAll(getFiles(file));
-                }
+static List<File> getFiles(File start) throws IOException {
+    List<File> result = new ArrayList<>();
+    if (start.isDirectory()) {
+        File[] files = start.listFiles();
+        if (files != null) {
+            for (File file : files) {
+                result.addAll(getFiles(file));
             }
-        } else {
-            result.add(start);
         }
-        return result;
-	}
+    } else {
+        result.add(start);
+    }
+    return result;
+}
 ```
 This change fixes the bug by recursively traversing all directories and collecting files from each directory, not just the top-level directory.
 ## Part 2
