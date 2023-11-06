@@ -55,3 +55,38 @@ An input that doesn’t induce a failure, as a JUnit test and any associated cod
 - - -
 The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
 ![Screenshot1](./images/lab3_junit.png)
+- - -
+The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+### Before
+```java
+static List<File> getFiles(File start) throws IOException {
+	  File f = start;
+	  List<File> result = new ArrayList<>();
+	  result.add(start);
+	  if(f.isDirectory()) {
+	    File[] paths = f.listFiles();
+	    for(File subFile: paths) {
+	      result.add(subFile);
+	    }
+	  }
+	  return result;
+	}
+```
+### After
+
+```java
+	static List<File> getFiles(File start) throws IOException {
+	  List<File> result = new ArrayList<>();
+        if (start.isDirectory()) {
+            File[] files = start.listFiles();
+            if (files != null) {
+                for (File file : files) {
+                    result.addAll(getFiles(file));
+                }
+            }
+        } else {
+            result.add(start);
+        }
+        return result;
+	}
+```
