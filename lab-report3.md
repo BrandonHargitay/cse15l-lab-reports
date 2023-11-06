@@ -2,7 +2,9 @@
 Finding bugs and researching commands 
 ## Part 1
 The issue with the `getFile` method in `fileExample.java`  is that it incorrectly processes individual files. It attempts to list contents within a file, which is an operation only applicable to directories, not to files.
-- A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
+---
+A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
+
 ```java
 public class FileExampleTest {
 
@@ -19,6 +21,6 @@ public class FileExampleTest {
 
     }
 }
-
-
 ```
+---
+An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
