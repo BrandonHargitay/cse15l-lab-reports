@@ -125,3 +125,27 @@ less -N ./technical/911report/chapter-2.txt
 ```
 Line numbers are shown in front of each line when the `-N` option is used. When you need to consult the line numbers for editing or discussion, this is quite helpful.
 - - -
+```bash
+less -J ./technical/911report/chapter-2.txt
+*             It is the story of eccentric and violent ideas sprouting in the fertile ground of
+*                 political and social turmoil. It is the story of an organization poised to seize its
+*                 historical moment. How did Bin Ladin-with his call for the indiscriminate killing of
+                  Americans-win thousands of followers and some degree of approval from millions more?
+*             The history, culture, and body of beliefs from which Bin Ladin has shaped and spread
+*                 his message are largely unknown to many Americans. Seizing on symbols of Islam's
+*                 past greatness, he promises to restore pride to people who consider themselves the
+                  victims of successive foreign masters. He uses cultural and religious allusions to
+*                 the holy Qur'an and some of its interpreters. He appeals to people disoriented by
+*                 cyclonic change as they confront modernity and globalization. His rhetoric
+*                 selectively draws from multiple sources-Islam, history, and the region's political
+*                 and economic malaise. He also stresses grievances against the United States widely
+```
+```bash
+less -J ./technical/911report/chapter-1.txt
+Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eastern United States. Millio
+* ns of men and women readied themselves for work. Some made their way to the Twin Towers, the signature stru
+* ctures of the World Trade Center complex in New York City. Others went to Arlington, Virginia, to the Penta
+* gon. Across the Potomac River, the United States Congress was back in session. At the other end of Pennsylv
+* ania Avenue, people began to line up for a White House tour. In Sarasota, Florida, President George W. Bush
+*  went for an early morning run.
+```
