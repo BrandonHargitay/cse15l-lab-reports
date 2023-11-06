@@ -127,6 +127,7 @@ Line numbers are shown in front of each line when the `-N` option is used. When 
 - - -
 ```bash
 less -J ./technical/911report/chapter-2.txt
+
 *             It is the story of eccentric and violent ideas sprouting in the fertile ground of
 *                 political and social turmoil. It is the story of an organization poised to seize its
 *                 historical moment. How did Bin Ladin-with his call for the indiscriminate killing of
@@ -142,6 +143,7 @@ less -J ./technical/911report/chapter-2.txt
 ```
 ```bash
 less -J ./technical/911report/chapter-1.txt
+
 Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the eastern United States. Millio
 * ns of men and women readied themselves for work. Some made their way to the Twin Towers, the signature stru
 * ctures of the World Trade Center complex in New York City. Others went to Arlington, Virginia, to the Penta
@@ -149,3 +151,24 @@ Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the easter
 * ania Avenue, people began to line up for a White House tour. In Sarasota, Florida, President George W. Bush
 *  went for an early morning run.
 ```
+leaves a status column visible on the screen. The lines that matched the current search are displayed in the status column.
+- - -
+```bash
+less -M ./technical/911report/chapter-2.txt
+
+            THE FOUNDATION OF THE NEW TERRORISM
+            A DECLARATION OF WAR
+            In February 1998, the 40-year-old Saudi exile Usama Bin Ladin and a fugitive Egyptian
+                physician, Ayman al Zawahiri, arranged from their Afghan headquarters for an Arabic
+                newspaper in London to publish what they termed a fatwa issued in the name of a
+
+/technical/911report/chapter-2.txt lines 11-30/948 3%
+```
+```bash
+less -M ./technical/911report/chapter-1.txt
+
+    For those heading to an airport, weather conditions could not have been better for a safe and pleasant journey. Among the travelers were Mohamed Atta and Abdul Aziz al Omari, who arrived at the airport in Portland, Maine.
+
+./technical/911report/chapter-1.txt lines 6-16/731 1%
+```
+When you search with the `-M` option, a more detailed prompt appears, displaying the file name and the current position within the file.
