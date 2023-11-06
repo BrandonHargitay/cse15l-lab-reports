@@ -4,22 +4,36 @@ Finding bugs and researching commands
 The issue with the `getFile` method in `fileExample.java`  is that it incorrectly processes individual files. It attempts to list contents within a file, which is an operation only applicable to directories, not to files.
 - - -
 A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
+```bash
+some-files/
+|-  a.txt
+|-  more-files/
+    |-  b.txt
+    |-  c.java
+|-  even-more-files/
+    |-  d.java
+    |-  a.txt
+```
 
 ```java
-public class FileExampleTest {
-
+public class FileTest {
     @Test
-    public void testSingleFileRetrieval() throws IOException {
-        File tempFile = new File(System.getProperty("java.io.tmpdir"), "sampleTestFile.txt");
-        boolean isFileCreated = tempFile.createNewFile();
-        assertTrue(isFileCreated);
-
-        List<File> retrievedFiles = FileExample.getFiles(tempFile);
-
-        assertEquals("Should only have one file in the list", 1, retrievedFiles.size());
-        assertEquals("The retrieved file should be the one that was created", tempFile, retrievedFiles.get(0));
-
+    public void testGetFilesRecursive(){
+        File start = new File("some-files/");
+        
+        List<File> files = FileExample.getFiles(start);
+        
+        int count = 5; 
+        
+        assertEquals("ERROR! expected count does not match actual count", count, files.size());
+        
+        assertTrue(files.contains(new File("some-files/a.txt")));
+        assertTrue(files.contains(new File("some-files/more-files/b.txt")));
+        assertTrue(files.contains(new File("some-files/more-files/c.java")));
+        assertTrue(files.contains(new File("some-files/even-more-files/d.java")));
+        assertTrue(files.contains(new File("some-files/even-more-files/a.txt")));
     }
+  
 }
 ```
 ---
