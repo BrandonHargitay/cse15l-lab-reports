@@ -36,7 +36,7 @@ public class FileTest {
   
 }
 ```
----
+- - -
 An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
 ```java
 @Test
@@ -52,3 +52,6 @@ An input that doesn’t induce a failure, as a JUnit test and any associated cod
         assertTrue(files.contains(new File("some-files/a.txt")));
     }
 ```
+- - -
+The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+![Screenshot1](./images/lab3_junit.png)
