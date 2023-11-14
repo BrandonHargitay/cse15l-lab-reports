@@ -90,7 +90,7 @@ static List<File> getFiles(File start) throws IOException {
     return result;
 }
 ```
-This change fixes the bug by recursively traversing all directories and collecting files from each directory, not just the top-level directory.
+The revised code corrects the bug by introducing recursion, allowing getFiles to explore not just the immediate directory (start) but also all nested directories. Previously, the function only added files from the start directory, missing files in subdirectories. The new version, however, recursively calls getFiles for each file in a directory. This recursive call ensures every file, no matter how deeply nested, is included. Additionally, it includes a null check (if (files != null)) before iterating over the directory contents, preventing potential NullPointerExceptions
 ## Part 2
 ### Less Command
 ```bash
