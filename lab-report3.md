@@ -170,7 +170,7 @@ less -M ./technical/911report/chapter-2.txt
 
 /technical/911report/chapter-2.txt lines 11-30/948 3%
 ```
-`M`Opens chapter-2.txt in less with a detailed prompt showing the file name and current position within the file. This detailed prompt is useful for understanding your location within a large file.
+`-M`Opens chapter-2.txt in less with a detailed prompt showing the file name and current position within the file. This detailed prompt is useful for understanding your location within a large file.
 ```bash
 less -M ./technical/911report/chapter-1.txt
 
