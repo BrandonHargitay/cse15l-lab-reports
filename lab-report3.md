@@ -98,12 +98,13 @@ less -pbecause ./technical/911report/chapter-1.txt
 
  Hani Hanjour, Khalid al Mihdhar, and Majed Moqed were flagged by CAPPS. The Hazmi brothers were also selected for extra scrutiny by the airline's customer service representative at the check-in counter. He did so because one of the brothers did not have photo identification nor could he understand English, and because the agent found both of the passengers to be suspicious. The only consequence of their selection was that their checked bags were held off the plane until it was confirmed that they had boarded the aircraft.
 ```
+`-P` This command opens chapter-1.txt in the less viewer and immediately jumps to the first occurrence of the word "because." It's helpful for quickly locating specific information or keywords in a large text file, saving time by not having to scroll manually.
 ```bash
 less -preport ./technical/911report/chapter-1.txt
 
  None of the checkpoint supervisors recalled the hijackers or reported anything suspicious regarding their screening.
 ```
-Opens the first item that fits the given pattern in a text file on the page.
+`-P` This opens the file and jumps to the first occurrence of "report." Similar to the previous command, this is useful for quickly navigating to specific terms
 - - -
 ```bash
 less -N ./technical/911report/chapter-1.txt
@@ -114,6 +115,7 @@ less -N ./technical/911report/chapter-1.txt
 4 "WE HAVE SOME PLANES"
 5 
 ```
+`-N` Displays the text of chapter-1.txt with line numbers in front of each line. Line numbers are used for referencing specific parts of the text, especially when discussing the document with others or editing it.
 ```bash
 less -N ./technical/911report/chapter-2.txt
 
@@ -123,7 +125,7 @@ less -N ./technical/911report/chapter-2.txt
 4             THE FOUNDATION OF THE NEW TERRORISM
 5             A DECLARATION OF WAR
 ```
-Line numbers are shown in front of each line when the `-N` option is used. When you need to consult the line numbers for editing or discussion, this is quite helpful.
+`-N`Shows chapter-2.txt with line numbers. This is also useful for the same reason as above
 - - -
 ```bash
 less -J ./technical/911report/chapter-2.txt
@@ -141,6 +143,9 @@ less -J ./technical/911report/chapter-2.txt
 *                 selectively draws from multiple sources-Islam, history, and the region's political
 *                 and economic malaise. He also stresses grievances against the United States widely
 ```
+`-J`Opens chapter-2.txt and displays a status column indicating lines that match the current search.
+This feature is useful for keeping track of search results within a document, especially in a long file.
+
 ```bash
 less -J ./technical/911report/chapter-1.txt
 
@@ -151,7 +156,8 @@ Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the easter
 * ania Avenue, people began to line up for a White House tour. In Sarasota, Florida, President George W. Bush
 *  went for an early morning run.
 ```
-leaves a status column visible on the screen. The lines that matched the current search are displayed in the status column.
+`-J`Opens chapter-1.txt with a status column showing lines matching the current search.
+It helps in navigating through search results, particularly in long documents.
 - - -
 ```bash
 less -M ./technical/911report/chapter-2.txt
@@ -164,6 +170,7 @@ less -M ./technical/911report/chapter-2.txt
 
 /technical/911report/chapter-2.txt lines 11-30/948 3%
 ```
+`M`Opens chapter-2.txt in less with a detailed prompt showing the file name and current position within the file. This detailed prompt is useful for understanding your location within a large file.
 ```bash
 less -M ./technical/911report/chapter-1.txt
 
@@ -171,7 +178,8 @@ less -M ./technical/911report/chapter-1.txt
 
 ./technical/911report/chapter-1.txt lines 6-16/731 1%
 ```
-When you search with the `-M` option, a more detailed prompt appears, displaying the file name and the current position within the file.
+`-M`Displays chapter-1.txt with a detailed prompt including the file name and current position.
+It shows a clear context of your location within the file, which is  useful in long documents to track progress.
 - - -
 The command options were found by googling `less command options` I found a site that gave a description of the and picked the options that looked the most interesting
 [https://phoenixnap.com/kb/less-command-in-linux](https://phoenixnap.com/kb/less-command-in-linux)
