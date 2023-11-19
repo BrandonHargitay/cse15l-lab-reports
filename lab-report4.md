@@ -1,19 +1,28 @@
 # Lab Report 4 - Vim (Week 7)
-Performing shortcuts 
+Performing Shortcuts 
+
 ## Steps
-1. I opened my terminal and manually typed `ssh cs15lfa23jk@ieng6.ucsd.ed` I found that my typing speed is faster then trying to use the `up` arrow to find my ssh command in the history
-![Screenshot1](./images/step1.png) 
-2. I typed `git clone` prior to starting `step 1` I made sure to copy the github URL so I could use `cmd + v` to paste the URL into my terminal to save time
-![Screenshot1](./images/step2.png) 
-3. I cloned the repo into my home directory so I had to use `cd` to change directory. I typed `cd la` then hit `<tab>` to auto complete the line then hit `<enter>` to run the full command which was `cd lab7/`
-![Screenshot1](./images/step3_1.png) 
-Once I was inside the `lab7` direcotry I ran the test by typing `bash te` then hit `<tab>` to autocomplete the line then clicked `<enter>` to run the command. The full command was `bash test.sh`
-![Screenshot1](./images/step3_2.png) 
-4. To fix the failing test I had to edit the java file. I typed `vim Lis` then hit `<tab>` to autocomplete but it only autocomplete till `vim ListExamples` I then typed a `.` then clicked `<tab>` again and it autocompleted then I hit `<enter>` to run the this command `vim ListExamples.java`
-![Screenshot1](./images/step4.png)
-The `jUnit` error stated that the error was on line 44 so instead of clicking `j` multiple times I could enter `43j` to move my cursor to line 44. I hit `e` to move my cursor to the end of the next word on the line where my cursor is. I pressed `r` to replace the letter that my cursor is on then pressed `2` now `index1` is `index2`. To save the changes and exit vim I typed `:wq`
-![Screenshot1](./images/step4_2.png)
-5. I now re ran the test and typed `bash te` clicked `<tab>` and it autocomapleted to `<bash test.sh` and clicked `<enter>` to run the test. I find it faster to type out the command then using the `up` arrow to use my previous commands. The tests were successful.
-![Screenshot1](./images/step5.png)
-6. To push and commit the changes I made I typed `git add Li` clicked `<tab>` to auto complete and to save more time ran two commands in one line by using `&&` I then typed `git commit -m "Fix Error"` the full command was `git add ListExamples.java && git commit -m "Fix error"` then to push the commit I typed `git push`
-![Screenshot1](./images/step6.png)
+
+1. I opened my terminal and manually typed `ssh cs15lfa23jk@ieng6.ucsd.edu`. I found that typing the command was faster than using the `up` arrow to find my SSH command in the history.
+   ![Screenshot1](./images/step1.png) 
+
+2. Before starting step 1, I copied the GitHub URL to my clipboard. Then, I typed `git clone` and used `cmd + v` to paste the URL into my terminal, which saved time.
+   ![Screenshot1](./images/step2.png) 
+
+3. After cloning the repo into my home directory, I needed to change directories. I typed `cd la`, pressed `<tab>` to auto-complete, resulting in `cd lab7/`, and then pressed `<enter>`.
+   ![Screenshot1](./images/step3_1.png) 
+   
+   Inside the `lab7` directory, I ran the test by typing `bash te`, hitting `<tab>` for auto-completion, and then `<enter>`. The full command was `bash test.sh`.
+   ![Screenshot1](./images/step3_2.png) 
+
+4. To address the failing test, I edited the Java file. I typed `vim Lis`, pressed `<tab>` for partial auto-completion to `vim ListExamples`, added a `.`, pressed `<tab>` again for full completion, and then hit `<enter>` to run `vim ListExamples.java`.
+   ![Screenshot1](./images/step4.png)
+   
+   The JUnit error indicated an issue on line 44. Instead of repeatedly pressing `j`, I entered `43j` to jump directly to line 44. I pressed `e` to move to the end of the next word, then `r` to replace the letter under the cursor with `2`, correcting `index1` to `index2`. To save and exit Vim, I typed `:wq`.
+   ![Screenshot1](./images/step4_2.png)
+
+5. To re-run the test, I typed `bash te`, pressed `<tab>` to complete it to `bash test.sh`, and hit `<enter>`. Typing out the command felt quicker than using the `up` arrow for previous commands. The tests ran successfully.
+   ![Screenshot1](./images/step5.png)
+
+6. To commit and push the changes, I typed `git add Li`, used `<tab>` for auto-completion, and to be more efficient, I combined two commands using `&&`. The full command was `git add ListExamples.java && git commit -m "Fix error"`. Finally, I ran `git push` to complete the process.
+   ![Screenshot1](./images/step6.png)
