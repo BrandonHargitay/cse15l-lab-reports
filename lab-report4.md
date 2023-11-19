@@ -7,5 +7,9 @@ Performing shortcuts
 ![Screenshot1](./images/step2.png) 
 3. I cloned the repo into my home directory so I had to use `cd` to change directory. I typed `cd la` then hit `<tab>` to auto complete the line then hit `<enter>` to run the full command which was `cd lab7/`
 ![Screenshot1](./images/step3_1.png) 
-Once I was inside the `lab7` direcotry I ran the test by typing `bash te` then hit `<tab>` to autocomplete the line then clicked `<enter>` to run the command the full command was `bash test.sh`
+Once I was inside the `lab7` direcotry I ran the test by typing `bash te` then hit `<tab>` to autocomplete the line then clicked `<enter>` to run the command. The full command was `bash test.sh`
 ![Screenshot1](./images/step3_2.png) 
+4. To fix the failing test I had to edit the java file. I typed `vim Lis` then hit `<tab>` to autocomplete but it only autocomplete till `vim ListExamples` I then typed a `.` then clicked `<tab>` again and it autocompleted then I hit `<enter>` to run the this command `vim ListExamples.java`
+![Screenshot1](./images/step4.png)
+The `jUnit` error stated that the error was on line 44 so instead of clicking `j` multiple times I could enter `43j` to move my cursor to line 44. I hit `e` to move my cursor to the end of the next word on the line where my cursor is. I pressed `r` to replace the letter that my cursor is on then pressed `2` now `index1` is `index2`. To save the changes and exit vim I typed `:wq`
+![Screenshot1](./images/step4_2.png)
