@@ -13,7 +13,7 @@ Once I was inside the `lab7` direcotry I ran the test by typing `bash te` then h
 ![Screenshot1](./images/step4.png)
 The `jUnit` error stated that the error was on line 44 so instead of clicking `j` multiple times I could enter `43j` to move my cursor to line 44. I hit `e` to move my cursor to the end of the next word on the line where my cursor is. I pressed `r` to replace the letter that my cursor is on then pressed `2` now `index1` is `index2`. To save the changes and exit vim I typed `:wq`
 ![Screenshot1](./images/step4_2.png)
-5. I now re ran the test and typed `bash te` clicked `<tab>` and it autocomapleted to `<bash test.sh` and clicked `<enter>` to run the test. The tests were successful.
+5. I now re ran the test and typed `bash te` clicked `<tab>` and it autocomapleted to `<bash test.sh` and clicked `<enter>` to run the test. I find it faster to type out the command then using the `up` arrow to use my previous commands. The tests were successful.
 ![Screenshot1](./images/step5.png)
-6. To push and commit the changes I made I typed `git add Li` clicked `<tab>` to auto complete and to save more time ran two commands in one line by using `&&` I then typed `git commit -m "Fix Error"` the full command was ` git add ListExamples.java && git commit -m "Fix error"` then to push the commit I typed `git push`
+6. To push and commit the changes I made I typed `git add Li` clicked `<tab>` to auto complete and to save more time ran two commands in one line by using `&&` I then typed `git commit -m "Fix Error"` the full command was `git add ListExamples.java && git commit -m "Fix error"` then to push the commit I typed `git push`
 ![Screenshot1](./images/step6.png)
