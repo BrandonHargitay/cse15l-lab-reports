@@ -7,3 +7,5 @@ Performing shortcuts
 ![Screenshot1](./images/step2.png) 
 3. I cloned the repo into my home directory so I had to use `cd` to change directory. I typed `cd la` then hit `<tab>` to auto complete the line then hit `<enter>` to run the full command which was `cd lab7/`
 ![Screenshot1](./images/step3_1.png) 
+Once I was inside the `lab7` direcotry I ran the test by typing `bash te` then hit `<tab>` to autocomplete the line then clicked `<enter>` to run the command the full command was `bash test.sh`
+![Screenshot1](./images/step3_2.png) 
