@@ -25,3 +25,20 @@ total 840
 javac -cp .:libb/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.jav
 ```
 It looks like the files in `lib` are correct and the bug lines in my `javac` command. I misspelled `lib`, I added a extra b. Fixing the typo solved the bug, my files now complie.
+- - -
+
+
+I ran `ls -l lib`, and the JAR files are there. But I realized the typo in my script. It uses `libb` instead of `lib` in the classpath. That's probably why the script couldn't find the JUnit classes.
+
+#### Summary of the Scenario
+4. At the end, all the information needed about the setup,
+- **File & Directory Structure Needed**: 
+  - `grade.sh` script
+  - `TestListExamples.java`
+  - `student-submission` directory containing `ListExamples.java`
+  - `lib` directory containing `hamcrest-core-1.3.jar` and `junit-4.13.2.jar`
+- **Contents of Each File Before Fixing the Bug**: 
+  - `grade.sh` script with a typo in the classpath (`libb` instead of `lib`).
+- **Full Command Line to Trigger the Bug**: `bash grade.sh <git_hub_url>`
+- **Description of What to Edit to Fix the Bug**: 
+  - Correct the classpath in the `grade.sh` script from `libb/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar` to `lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar`.
