@@ -8,3 +8,4 @@ Design a debugging scenario
 Error: Could not find or load main class org.junit.runner.JunitCore
 Caused by: java.lang.ClassNotFoundException: org.junit.runner.JunitCore
 ```
+![Screenshot1](./images/lab5_1.png) 
