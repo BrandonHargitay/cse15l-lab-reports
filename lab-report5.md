@@ -24,3 +24,4 @@ total 840
 ```console
 javac -cp .:libb/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.jav
 ```
+It looks like the files in `lib` are correct and the bug lines in my `javac` command. I misspelled `lib`, I added a extra b. Fixing the typo solved the bug, my files now complie.
