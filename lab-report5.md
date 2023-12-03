@@ -30,7 +30,7 @@ It looks like the files in `lib` are correct and the bug lines in my `javac` com
 
 I ran `ls -l lib`, and the JAR files are there. But I realized the typo in my script. It uses `libb` instead of `lib` in the classpath. That's probably why the script couldn't find the JUnit classes.
 
-4. At the end, all the information needed about the setup,
+4.At the end, all the information needed about the setup,
 - **File & Directory Structure Needed**: 
   - `grade.sh` script
   - `TestListExamples.java`
