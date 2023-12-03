@@ -41,3 +41,6 @@ I ran `ls -l lib`, and the JAR files are there. But I realized the typo in my sc
 - **Full Command Line to Trigger the Bug**: `bash grade.sh <git_hub_url>`
 - **Description of What to Edit to Fix the Bug**: 
   - Correct the classpath in the `grade.sh` script from `libb/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar` to `lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar`.
+  - - -
+  ## Part 2 – Reflection
+During the latter half of this quarter, I picked up some really handy shortcuts for using the terminal and Vim, which have been a big help. For instance, in the terminal, I learned to press `Ctrl + R` to quickly find old commands I've used, saving me from typing them out again. In Vim, I found out that hitting `gg` takes me straight to the start of a document, and `Shift + G` jumps to the end, which is super useful for moving around in longer files. Plus, turning line numbers on and off in Vim with `:set number` has made it much easier to keep track of where I am in my code. 
